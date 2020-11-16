@@ -1,0 +1,113 @@
+{
+    "description": "利用Leetcode来进行JAVA语言的学习", 
+    "links": {
+      "sidebar": {
+        "主页": "http://www.tristonk.com"
+      }
+    }, 
+    "author": "Shulei kuang <kuangsl@foxmail.com>", 
+    "title": "Learn Java using Leetcode", 
+    "gitbook": "3.2.3", 
+    "language": "zh-hans", 
+    "plugins": [
+      "theme-comscore", 
+      "anchors", 
+      "-lunr", 
+      "-search", 
+      "search-plus", 
+      "-highlight", 
+      "prism", 
+      "prism-themes", 
+      "github-buttons", 
+      "splitter", 
+      "-sharing", 
+      "sharing-plus", 
+      "tbfed-pagefooter", 
+      "expandable-chapters-small", 
+      "donate", 
+      "copy-code-button", 
+      "callouts"
+    ], 
+    "pluginsConfig": {
+      "sharing": {
+        "qq": true, 
+        "douban": false, 
+        "all": [
+          "douban", 
+          "facebook", 
+          "google", 
+          "instapaper", 
+          "line", 
+          "linkedin", 
+          "messenger", 
+          "pocket", 
+          "qq", 
+          "qzone", 
+          "stumbleupon", 
+          "twitter", 
+          "viber", 
+          "vk", 
+          "weibo", 
+          "whatsapp"
+        ], 
+        "google": false, 
+        "stumbleupon": false, 
+        "hatenaBookmark": false, 
+        "twitter": true, 
+        "vk": false, 
+        "linkedin": false, 
+        "instapaper": false, 
+        "pocket": false, 
+        "weibo": true, 
+        "viber": false, 
+        "facebook": true, 
+        "qzone": false, 
+        "messenger": false, 
+        "line": false, 
+        "whatsapp": false
+      }, 
+      "tbfed-pagefooter": {
+        "modify_format": "YYYY-MM-DD HH:mm:ss", 
+        "modify_label": "最后更新：", 
+        "copyright": "tristonk.com，使用<a href='https://creativecommons.org/licenses/by/4.0/deed.zh'>署名4.0国际(CC BY 4.0)协议</a>发布"
+      }, 
+      "github-buttons": {
+        "buttons": [
+          {
+            "repo": "LearnJavaByLeetcode", 
+            "count": true, 
+            "type": "star", 
+            "user": "TristonK", 
+            "size": "small"
+          }, 
+          {
+            "count": false, 
+            "width": "135", 
+            "type": "follow", 
+            "user": "TristonK", 
+            "size": "small"
+          }
+        ]
+      }, 
+      "prism": {
+        "css": [
+          "prism-themes/themes/prism-atom-dark.css"
+        ]
+      }, 
+      "donate": {
+        "alipay": "", 
+        "title": "", 
+        "alipayText": "支付宝打赏给TristonK", 
+        "button": "打赏", 
+        "wechatText": "微信打赏给TristonK", 
+        "wechat": ""
+      }, 
+      "theme-default": {
+        "showLevel": true
+      }, 
+      "callouts": {
+        "showTypeInHeader": false
+      }
+    }, 
+    "root": "./src"
+  }
