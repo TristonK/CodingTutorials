@@ -1,3 +1,5 @@
 # Introduction
 
-Learning Java By Leetcode
+## 适用人群
+
+已经有一定的编程基础（如C++）, 且对基本的数据结构有了解，想要快速上手使用Java的人群
