@@ -4,6 +4,40 @@
 
 ## 1672 Richest Customer Wealth
 
+>  题意：给定一个二维数组，给出二维数组每一行的和中的最大值。
+
+- 函数参数中二维数组的表示：`int[][] accounts`
+
+- for循环写法可以与C++中保持一致
+
+- 对数组长度的访问直接使用`.length`
+
+- 比较较大值`Math.max()`, 支持同为double，float，int，long的参数
+
+一种内存占用更小的写法：
+
+```java
+class Solution {
+    public int maximumWealth(int[][] accounts) {
+        int max = 0;
+        for (int[] a : accounts) {
+            max = Math.max(max, Arrays.stream(a).sum());
+        }
+        return max;
+    }
+}
+
+------------分隔线-------------------
+    
+ public int maximumWealth(int[][] accounts) {
+        return Arrays.stream(accounts).map(ints ->
+                Arrays.stream(ints).sum()
+        ).max(Integer::compareTo).get();
+    }
+```
+
+里面使用到了Java8 的**流式接口（Fluent Interface）**。
+
 ## 1480 Running Sum of 1d Array 
 
 ## 剑指 Offer 58 - II 左旋转字符串 LCOF   	
