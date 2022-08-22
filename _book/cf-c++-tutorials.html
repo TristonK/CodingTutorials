@@ -1,0 +1,471 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>🌐 CF-C++ tutorials · Learn Java using Leetcode</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="来源：http://codeforces.com/blog/entry/57282">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Shulei kuang <kuangsl@foxmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-callouts/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="tiao-zhan-cheng-xu-she-ji-jing-sai-di-er-ban.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"repo":"LearnJavaByLeetcode","count":true,"type":"star","user":"TristonK","size":"small"},{"count":false,"width":"135","type":"follow","user":"TristonK","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tristonk.com" target="_blank" class="custom-link">主页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="tiao-zhan-cheng-xu-she-ji-jing-sai-di-er-ban.html">
+            
+                <a href="tiao-zhan-cheng-xu-she-ji-jing-sai-di-er-ban.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    📖 挑战程序设计竞赛（第二版）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="cf-c++-tutorials.html">
+            
+                <a href="cf-c++-tutorials.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    🌐 CF-C++ tutorials
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >🌐 CF-C++ tutorials</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x1F310;-cf-c-tutorials"><a name="&#x1F310;-cf-c-tutorials" class="plugin-anchor" href="#&#x1F310;-cf-c-tutorials"><i class="fa fa-link" aria-hidden="true"></i></a>&#x1F310; CF-C++ tutorials</h1>
+<p>Here is the list of some of the good tutorials written by codeforces users :-\
+<strong>C++</strong></p>
+<ul>
+<li>[ ] <a href="http://codeforces.com/blog/entry/15643" target="_blank">C++ Tricks</a> by <a href="http://codeforces.com/profile/HosseinYousefi" target="_blank">HosseinYousefi</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/9702" target="_blank">C++ STL: map and set</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/11080" target="_blank">C++ STL: Policy based data structures</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/64218" target="_blank">Competitive C++ Manifesto: A Style Guide</a> by <a href="http://codeforces.com/profile/HosseinYousefi" target="_blank">HosseinYousefi</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/15547" target="_blank">Catching silly mistakes with GCC</a> by <a href="http://codeforces.com/profile/andreyv" target="_blank">andreyv</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/71075" target="_blank">About a general reader / writer for STL-Structures,</a> by <a href="http://codeforces.com/profile/Arturgo" target="_blank">Arturgo</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/62393" target="_blank">Blowing up unordered_map, and how to stop getting hacked on it</a> by <a href="http://codeforces.com/profile/neal" target="_blank">neal</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/74684" target="_blank">C++ tips and tricks</a> by <a href="http://codeforces.com/profile/Golovanov399" target="_blank">Golovanov399</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/75421" target="_blank">4-5x Faster Drop-in Replacement for std::lower_bound</a> by <a href="http://codeforces.com/profile/sslotin" target="_blank">sslotin</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/77480" target="_blank">How to get actual 64 bit bitsets on Codeforces [Not Recommended] [Don&apos;t do this at your job]</a> by <a href="http://codeforces.com/profile/Chilli" target="_blank">Chilli</a></li>
+</ul>
+<p><strong>Data Structures</strong></p>
+<ul>
+<li>[ ] <a href="http://codeforces.com/blog/entry/15729" target="_blank">Algorithm Gym :: Data Structures</a> by <a href="http://codeforces.com/profile/PrinceOfPersia" target="_blank">PrinceOfPersia</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/15890" target="_blank">Everything about Segment Trees</a> by <a href="http://codeforces.com/profile/PrinceOfPersia" target="_blank">PrinceOfPersia</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/18051" target="_blank">Efficient and easy Segtree</a> by <a href="http://codeforces.com/profile/Al.Cash" target="_blank">Al.Cash</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/57319" target="_blank">A simple introduction to &quot;Segment tree beats&quot;</a> by <a href="http://codeforces.com/profile/jiry\_2" target="_blank">jiry_2</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/44351" target="_blank">Sack(DSU on trees)</a> by <a href="http://codeforces.com/profile/Arpa" target="_blank">Arpa</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/67696" target="_blank">dsu on trees</a> by <a href="http://codeforces.com/profile/lewd" target="_blank">lewd</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/57046" target="_blank">SQRT Tree</a> by <a href="http://codeforces.com/profile/gepardo" target="_blank">gepardo</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/11241" target="_blank">Link-Cut tree</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+<li>[ ] <a href="https://www.codeforces.com/blog/entry/52094" target="_blank">Easy implementation of Compressed 2D Binary Indexed Tree for grid of binary numbers</a> by <a href="http://codeforces.com/profile/sdnr1" target="_blank">sdnr1</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/52854" target="_blank">Introduction to New Data Structure: Wavelet Trees</a> by <a href="http://codeforces.com/profile/rachitiitr" target="_blank">rachitiitr</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/61364" target="_blank">[Tutorial] Searching Binary Indexed Tree in O(log(N)) using Binary Lifting</a> by <a href="http://codeforces.com/profile/sdnr1" target="_blank">sdnr1</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/61203" target="_blank">An alternative sorting order for Mo&apos;s algorithm</a> by <a href="http://codeforces.com/profile/gepardo" target="_blank">gepardo</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/63149" target="_blank">How can we perform segment queries with Palindromic Tree?</a> by <a href="http://codeforces.com/profile/duckladydinh" target="_blank">duckladydinh</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/60837" target="_blank">Easy and (Semi)Efficient Dynamic Segment Trees (with Policy Hash Tables)</a> by <a href="http://codeforces.com/profile/Chilli" target="_blank">Chilli</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/45485" target="_blank">2D Range Minimum Query in O(1)</a> by <a href="http://codeforces.com/profile/fnf47" target="_blank">fnf47</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/64914" target="_blank">Nifty implementation of multi-dimensional Binary Indexed Trees using templates.</a> by <a href="http://codeforces.com/profile/mouse\_wireless" target="_blank">mouse_wireless</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/53168" target="_blank">Top 10 optimizations 2017- (collectors edition)</a> by <a href="http://codeforces.com/profile/bukefala" target="_blank">bukefala</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/66643" target="_blank">[Tutorial] Sparse table</a> by <a href="http://codeforces.com/profile/ADJA" target="_blank">ADJA</a></li>
+<li>[ ] <a href="https://www.quora.com/q/threadsiiithyderabad/Tutorial-on-Trie-and-example-problems" target="_blank">Tutorial on Trie and example problems</a> by <a href="http://codeforces.com/profile/darkshadows" target="_blank">darkshadows</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/71038" target="_blank">On Multidimensional Range Queries</a> by <a href="http://codeforces.com/profile/Laakeri" target="_blank">Laakeri</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/71568" target="_blank">Path max queries on a tree in O(1)</a> by <a href="http://codeforces.com/profile/neal" target="_blank">neal</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/71706" target="_blank">Enumerating all Binary Trees to build O(n)/O(1) RMQ</a> by <a href="http://codeforces.com/profile/SecondThread" target="_blank">SecondThread</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/72690" target="_blank">Mo&apos;s Algorithm (with update and without update, now you can understand both)</a> by <a href="http://codeforces.com/profile/Fype" target="_blank">Fype</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/43230" target="_blank">Mo&apos;s Algorithm on Trees [Tutorial]</a> by <a href="http://codeforces.com/profile/animeshf" target="_blank">animeshf</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/57292" target="_blank">Understanding Fenwick Trees / Binary Indexed Trees</a> by <a href="http://codeforces.com/profile/Malomalomalomalo" target="_blank">Malomalomalomalo</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/67637" target="_blank">Maintain subtree information using link/cut trees</a> by <a href="http://codeforces.com/profile/ouuan" target="_blank">ouuan</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/68271" target="_blank">[Tutorial] Two ways to apply Mo&apos;s Algorithm on Trees</a> by <a href="http://codeforces.com/profile/oToToT" target="_blank">oToToT</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/75885" target="_blank">Link Cut Tree implementation</a> by <a href="http://codeforces.com/profile/bicsi" target="_blank">bicsi</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/68419" target="_blank">Generalizing Segment Trees with Rust</a> by <a href="http://codeforces.com/profile/EbTech" target="_blank">EbTech</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/78898" target="_blank">Tutorial on Permutation Tree (&#x6790;&#x5408;&#x6811;)</a> by <a href="http://codeforces.com/profile/errorgorn" target="_blank">errorgorn</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/83170" target="_blank">Compressed segment trees and merging sets in O(N logU)</a> by <a href="http://codeforces.com/profile/bicsi" target="_blank">bicsi</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/83248" target="_blank">[Tutorial] Square root decomposition and applications</a> by <a href="http://codeforces.com/profile/box" target="_blank">box</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/83969" target="_blank">[Tutorial] A powerful representation of integer sets</a> by <a href="http://codeforces.com/profile/brunomont" target="_blank">brunomont</a></li>
+</ul>
+<p><strong>DP</strong></p>
+<ul>
+<li>[ ] <a href="http://codeforces.com/blog/entry/20935" target="_blank">DP on Trees</a> by <a href="http://codeforces.com/profile/darkshadows" target="_blank">darkshadows</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/45223" target="_blank">SOS DP</a> by <a href="http://codeforces.com/profile/usaxena95" target="_blank">usaxena95</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/54154" target="_blank">Recurrent Sequences &#x2014; Application of combinatorics in DP</a> by <a href="http://codeforces.com/profile/TooNewbie" target="_blank">TooNewbie</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/47764" target="_blank">Non-trivial DP tricks &amp; Techniques</a> by <a href="http://codeforces.com/profile/zscoder" target="_blank">zscoder</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/53960" target="_blank">Digit DP</a> by <a href="http://codeforces.com/profile/flash\_7" target="_blank">flash_7</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/59606" target="_blank">Optimized solution for Knapsack problem</a> by <a href="http://codeforces.com/profile/sdnr1" target="_blank">sdnr1</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/63257" target="_blank">Dp On Trees</a> by <a href="http://codeforces.com/profile/AghaTizi" target="_blank">AghaTizi</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/67679" target="_blank">DP Tutorial and Problem List</a> by <a href="http://codeforces.com/profile/Ahnaf.Shahriar.Asif" target="_blank">Ahnaf.Shahriar.Asif</a></li>
+</ul>
+<p><strong>Math</strong></p>
+<ul>
+<li>[ ] <a href="http://codeforces.com/blog/entry/57216" target="_blank">Invariants and monovariants</a> by <a href="http://codeforces.com/profile/TooNewbie" target="_blank">TooNewbie</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/53925" target="_blank">Mobius Inversion</a> by <a href="http://codeforces.com/profile/Nisiyama\_Suzune" target="_blank">Nisiyama_Suzune</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/67693" target="_blank">Mobius Inversion and Multiplicative functions : Tutorial</a> by <a href="http://codeforces.com/profile/revivedDevil" target="_blank">revivedDevil</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/54150" target="_blank">Dirichlet convolution</a> by <a href="http://codeforces.com/profile/Nisiyama\_Suzune" target="_blank">Nisiyama_Suzune</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/45298" target="_blank">Fast convolution for 64-bit integers</a> by <a href="http://codeforces.com/profile/quasisphere" target="_blank">quasisphere</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/43499" target="_blank">Tutorial for FFT/NTT Part 1</a> by <a href="http://codeforces.com/profile/sidhant" target="_blank">sidhant</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/48798" target="_blank">Tutorial for FFT/NTT Part 2</a> by <a href="http://codeforces.com/profile/sidhant" target="_blank">sidhant</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/55572" target="_blank">On Fast Fourier Transform</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/57212" target="_blank">Extended Eratosthenes Sieve</a> by <a href="http://codeforces.com/profile/lucyanna2018" target="_blank">lucyanna2018</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/51272" target="_blank">Burnside Lemma</a> by <a href="http://codeforces.com/profile/flash\_7" target="_blank">flash_7</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/60003" target="_blank">2 Special cases of Gaussian</a> by <a href="http://codeforces.com/profile/MazzForces" target="_blank">MazzForces</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/54111" target="_blank">Number of Solutions to a Linear Algebraic Equation</a> by <a href="http://codeforces.com/profile/J-C" target="_blank">J-C</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/60445" target="_blank">Rolling hash and 8 interesting problems</a> by <a href="http://codeforces.com/profile/dmkozyrev" target="_blank">dmkozyrev</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/59842" target="_blank">Avoid overflow in linear diophantine equation</a> by <a href="http://codeforces.com/profile/Jakube" target="_blank">Jakube</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/61290" target="_blank">[Tutorial] Chinese Remainder Theorem</a> by <a href="http://codeforces.com/profile/Valiors" target="_blank">Valiors</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/61306" target="_blank">Linear Recurrence and Berlekamp-Massey Algorithm</a> by <a href="http://codeforces.com/profile/TLE" target="_blank">TLE</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/63054" target="_blank">A blog on the Sprague-Grundy Theorem</a> by <a href="http://codeforces.com/profile/sirknightingfail" target="_blank">sirknightingfail</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/63446" target="_blank">Schonhage-Strassen (FFT-based integer multiplication) tutorial</a> by <a href="http://codeforces.com/profile/sammyMaX" target="_blank">sammyMaX</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/64625" target="_blank">[Tutorial] Inclusion-Exclusion Principle, Part 1.</a> by <a href="http://codeforces.com/profile/Roundgod" target="_blank">Roundgod</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/46620" target="_blank">Number Theory in Competitive Programming [Tutorial]</a> by <a href="http://codeforces.com/profile/rkm0959" target="_blank">rkm0959</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/64860" target="_blank">On burnside (again)</a> by <a href="http://codeforces.com/profile/rotavirus" target="_blank">rotavirus</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/65154" target="_blank">A Bitwise Convolution Tutorial</a> by <a href="http://codeforces.com/profile/Anai" target="_blank">Anai</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/65787" target="_blank">The Fear of Gaussian Elimination</a> by <a href="http://codeforces.com/profile/godmar" target="_blank">godmar</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/66176" target="_blank">Derangement Generation of an Array [Tutorial]</a> by <a href="http://codeforces.com/profile/lazyneuron" target="_blank">lazyneuron</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/69287" target="_blank">[Tutorial] Matroid intersection in simple words</a> by <a href="http://codeforces.com/profile/ATSTNG" target="_blank">ATSTNG</a></li>
+<li>[ ] <a href="http://fusharblog.com/solving-linear-recurrence-for-programming-contest/" target="_blank">Solving Linear Recurrence for Programming Contest</a> by <a href="http://codeforces.com/profile/fushar" target="_blank">fushar</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/68953" target="_blank">A Beautiful Technique for Some XOR Related Problems</a> by <a href="http://codeforces.com/profile/DrSwad" target="_blank">DrSwad</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/66040" target="_blank">The Intuition Behind NIM and Grundy Numbers in Combinatorial Game Theory</a> by <a href="http://codeforces.com/profile/Shisuko" target="_blank">Shisuko</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/71899" target="_blank">Fast Walsh Hadamard Transforms and it&apos;s inner workings</a> by <a href="http://codeforces.com/profile/upobir" target="_blank">upobir</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/72527" target="_blank">Modular Arithmetic for Beginners</a> by <a href="http://codeforces.com/profile/Spheniscine" target="_blank">Spheniscine</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/54111" target="_blank">Number of Solutions to a Linear Algebraic Equation</a> by <a href="http://codeforces.com/profile/J-C" target="_blank">J-C</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/76447" target="_blank">A problem collection of ODE and differential technique</a> by <a href="http://codeforces.com/profile/MiracleFaFa" target="_blank">MiracleFaFa</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/77298" target="_blank">Slope trick explained</a> by <a href="http://codeforces.com/profile/Kuroni" target="_blank">Kuroni</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/77468" target="_blank">[Tutorial] Generating Functions in Competitive Programming (Part 1)</a> by <a href="http://codeforces.com/profile/zscoder" target="_blank">zscoder</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/77551" target="_blank">[Tutorial] Generating Functions in Competitive Programming (Part 2)</a> by <a href="http://codeforces.com/profile/zscoder" target="_blank">zscoder</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/75406" target="_blank">Addendum: Optimized variant of Barrett reduction + proof re: ultimate NTT article</a> by <a href="http://codeforces.com/profile/Spheniscine" target="_blank">Spheniscine</a></li>
+</ul>
+<p><strong>String Processing</strong></p>
+<ul>
+<li>[ ] <a href="http://codeforces.com/blog/entry/3107" target="_blank">Z algorithm</a> by <a href="http://codeforces.com/profile/paladin8" target="_blank">paladin8</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/20861" target="_blank">Suffix Automata</a> by <a href="http://codeforces.com/profile/quasisphere" target="_blank">quasisphere</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/9612" target="_blank">Transition between Z- and prefix functions</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/12143" target="_blank">Manacher&apos;s algorithm and code readability</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+</ul>
+<p><strong>Geometry</strong></p>
+<ul>
+<li>[ ] <a href="http://codeforces.com/blog/entry/46744" target="_blank">Quaternion algebra and geometry</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/47821" target="_blank">Slope Trick</a> by <a href="http://codeforces.com/profile/zscoder" target="_blank">zscoder</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/54080" target="_blank">Nearest Neighbor Search</a> by <a href="http://codeforces.com/profile/P\_Nyagolov" target="_blank">P_Nyagolov</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/56994" target="_blank">Convex Hull trick and Li chao tree</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/48122" target="_blank">Geometry: 2D points and lines</a> by <a href="http://codeforces.com/profile/Al.Cash" target="_blank">Al.Cash</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/48868" target="_blank">Geometry: Polygon algorithms</a> by <a href="http://codeforces.com/profile/Al.Cash" target="_blank">Al.Cash</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/63823" target="_blank">[Tutorial] Convex Hull Trick &#x2014; Geometry being useful</a> by <a href="http://codeforces.com/profile/meooow" target="_blank">meooow</a></li>
+</ul>
+<p><strong>Graphs</strong></p>
+<ul>
+<li>[ ] <a href="http://codeforces.com/blog/entry/22276" target="_blank">0-1 BFS</a> by <a href="http://codeforces.com/profile/himanshujaju" target="_blank">himanshujaju</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/16205" target="_blank">2-SAT</a> by <a href="http://codeforces.com/profile/HosseinYousefi" target="_blank">HosseinYousefi</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/16221" target="_blank">Algorithm Gym :: Graph Algorithms</a> by <a href="http://codeforces.com/profile/PrinceOfPersia" target="_blank">PrinceOfPersia</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/18369" target="_blank">On Euler tour trees</a> by <a href="http://codeforces.com/profile/ifsmirnov" target="_blank">ifsmirnov</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/58894" target="_blank">&apos;Meet in the middle&apos; with shortest path problems of unweighted graph</a> by <a href="http://codeforces.com/profile/Livw08" target="_blank">Livw08</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/63164" target="_blank">Vertex cover and 2-SAT</a> by <a href="http://codeforces.com/profile/irkstepanov" target="_blank">irkstepanov</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/15102" target="_blank">Add edges to a digraph to make it strongly connected</a> by <a href="http://codeforces.com/profile/chaotic\_iak" target="_blank">chaotic_iak</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/68138" target="_blank">[Tutorial] The DFS tree and its applications: how I found out I really didn&apos;t understand bridges</a> by <a href="http://codeforces.com/profile/-is-this-fft-" target="_blank">-is-this-fft-</a></li>
+<li>[ ] <a href="https://tanujkhattar.wordpress.com/2016/01/10/the-bridge-tree-of-a-graph/#more-7" target="_blank">The &#x201C;Bridge Tree&#x201D; of a graph</a> by <a href="http://codeforces.com/profile/Baba" target="_blank">Baba</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/71146" target="_blank">Articulation points and bridges (Tarjan&apos;s Algorithm)</a> by <a href="http://codeforces.com/profile/searleser97" target="_blank">searleser97</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/72751" target="_blank">[Tutorial] Maximum Independent Set in Bipartite Graphs</a> by <a href="http://codeforces.com/profile/C137" target="_blank">C137</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/73707" target="_blank">Centroid Decomposition on a tree(Beginner)</a> by <a href="http://codeforces.com/profile/YoyOyoYOy000y000" target="_blank">YoyOyoYOy000y000</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/75627" target="_blank">[Insight] Number of Topological Orderings of a Directed Tree</a> by <a href="http://codeforces.com/profile/Osama\_Alkhodairy" target="_blank">Osama_Alkhodairy</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/76150" target="_blank">Online Query Based Rerooting Technique</a> by <a href="http://codeforces.com/profile/DeadlyCritic" target="_blank">DeadlyCritic</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/77760" target="_blank">[Tutorial] Boruvka&apos;s Algorithm</a> by <a href="http://codeforces.com/profile/RockyB" target="_blank">RockyB</a></li>
+</ul>
+<p><strong>Others</strong></p>
+<ul>
+<li>[ ] <a href="http://codeforces.com/blog/entry/45578" target="_blank">Parallel Binary Search</a> by <a href="http://codeforces.com/profile/himanshujaju" target="_blank">himanshujaju</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/48417" target="_blank">General ideas and tricks</a> by <a href="http://codeforces.com/profile/adamant" target="_blank">adamant</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/60717" target="_blank">Some Tutorials -- Or attempts at it :P</a> by <a href="http://codeforces.com/profile/RestingRajarshi" target="_blank">RestingRajarshi</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/60702" target="_blank">Tutorial On Tof (Ternary Search)</a> by <a href="http://codeforces.com/profile/Mahdi\_Jfri" target="_blank">Mahdi_Jfri</a></li>
+<li>[ ] <a href="http://codeforces.com/blog/entry/43578" target="_blank">YouTube Channels for Competitive Programmers</a> by <a href="http://codeforces.com/profile/Silver\_" target="_blank">Silver_</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/69186" target="_blank">Gym Contest with Editorial</a> by <a href="http://codeforces.com/profile/Learner99" target="_blank">Learner99</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/59129" target="_blank">Writing a book on geometry &#x2014; Update</a> by <a href="http://codeforces.com/profile/vlecomte" target="_blank">vlecomte</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/55274" target="_blank">Problem Topics</a> by <a href="http://codeforces.com/profile/-Morass-" target="_blank">-Morass-</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/71686" target="_blank">[Tutorial] Interview preparation guide for Google, Facebook, and other tech companies.</a> by <a href="http://codeforces.com/profile/ADJA" target="_blank">ADJA</a></li>
+<li>[ ] <a href="https://codeforces.com/blog/entry/84150" target="_blank">Tricks that I learnt while practicing</a> by <a href="http://codeforces.com/profile/nubir345" target="_blank">nubir345</a></li>
+</ul>
+<footer class="page-footer"><span class="copyright">tristonk.com&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">&#x7F72;&#x540D;4.0&#x56FD;&#x9645;(CC BY 4.0)&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;
+2022-08-22 17:41:09
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tiao-zhan-cheng-xu-she-ji-jing-sai-di-er-ban.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 📖 挑战程序设计竞赛（第二版）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"来源：http://codeforces.com/blog/entry/57282","title":"🌐 CF-C++ tutorials","level":"1.3","depth":1,"previous":{"title":"📖 挑战程序设计竞赛（第二版）","level":"1.2","depth":1,"path":"tiao-zhan-cheng-xu-she-ji-jing-sai-di-er-ban.md","ref":"tiao-zhan-cheng-xu-she-ji-jing-sai-di-er-ban.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","anchors","-lunr","-search","search-plus","-highlight","prism","prism-themes","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","donate","copy-code-button","callouts"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_format":"YYYY-MM-DD HH:mm:ss","modify_label":"最后更新：","copyright":"tristonk.com，使用<a href='https://creativecommons.org/licenses/by/4.0/deed.zh'>署名4.0国际(CC BY 4.0)协议</a>发布"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"callouts":{"showTypeInHeader":false},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"","alipayText":"支付宝打赏给TristonK","button":"打赏","title":"","wechat":"","wechatText":"微信打赏给TristonK"},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"prism-themes":{},"github-buttons":{"buttons":[{"repo":"LearnJavaByLeetcode","count":true,"type":"star","user":"TristonK","size":"small"},{"count":false,"width":"135","type":"follow","user":"TristonK","size":"small"}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","line","linkedin","messenger","pocket","qq","qzone","stumbleupon","twitter","viber","vk","weibo","whatsapp"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"Shulei kuang <kuangsl@foxmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Learn Java using Leetcode","language":"zh-hans","links":{"sidebar":{"主页":"http://www.tristonk.com"}},"gitbook":"3.2.3","description":"利用Leetcode来进行JAVA语言的学习"},"file":{"path":"cf-c++-tutorials.md","mtime":"2022-08-22T09:41:09.490Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-22T09:41:10.520Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
